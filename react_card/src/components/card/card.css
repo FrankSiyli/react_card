@@ -1,0 +1,38 @@
+.card{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.874);
+    transition: transform 1000ms;
+    user-select: none;
+    cursor: pointer;
+}
+
+.card-front,
+.card-back {
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.898);
+}
+
+.card-front{
+    background-color: aqua;
+}
+
+.card-back{
+    background-color: bisque;
+    transform: rotateY(180deg);
+}
